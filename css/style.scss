@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
 @mixin flex-box ($orientation) {
     max-width: 100%;
     display: flex;
@@ -19,7 +21,84 @@
     box-sizing: border-box;
 }
 
-nav{
-    @include flex-box(row);
-    justify-content: space-between;
+body{
+    font-family: "Poppins", sans-serif;
+    margin: {
+        left: 1.4rem;
+        right: 1.4rem;
+    }
+    background-color: #f3ebe3;
+}
+
+header{
+    nav{
+        @include flex-box(row);
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+}
+
+main{
+
+    .hero-content{
+        margin-top: 5rem;
+
+        h1{
+            font-size: 40px;
+            font-weight: bolder;
+        }
+
+        p{
+            padding-top: 1rem;
+            font-size: 16px ;
+            font-weight: 300;
+            color: #706c6c;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .cta-btn{
+            margin: 15px 0;
+            padding: 15px 40px;
+            border: none;
+            outline: none;
+            background-color: #0d490d;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 7px;
+        }
+
+        .review-brands img{
+            height: 1rem;
+            padding-left: 0.5rem;
+        }
+    }
+
+    .text-highlight{
+        color: #e9ae17;
+    }
+}
+
+section{
+    padding-top: 3rem;
+
+    h2{
+        padding: 0 12px;
+        font-size: 14px;
+        color: #706c6c;
+    }
+
+    .social-proof{
+        @include flex-box(row);
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding-top: 20px;
+        padding-bottom: 40px;
+
+        img{
+            width: 30%;
+            margin: 10px;
+        }
+    }
 }
