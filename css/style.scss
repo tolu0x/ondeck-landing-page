@@ -33,6 +33,10 @@
     border-radius: 7px;
 }
 
+.cta-btn:hover{
+    background-color: #016101;
+}
+
 a{
     text-decoration: none;
 }
@@ -50,7 +54,7 @@ header{
     nav{
         @include flex-box(row);
         justify-content: space-between;
-        margin-top: 2rem;
+        padding-top: 2rem;
     }
 }
 

@@ -1,26 +1,98 @@
 @media screen and (min-width: 900px){
 
+body{
+    margin: {
+        left: 4rem;
+        right: 4rem;
+    }
+}
 
 .hamburger{
     display: none;
 }
 
-    main{
-        display: flex;
+header{
+    max-width: 106.5rem;
+
+        .login > a{
+            color: #706c6c;
+            font-size: 14px;
+        }
+
+        nav{
+
+            .login button{
+                margin: 0;
+                padding: 15px 25px;
+            }
+        }
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 106.5rem;
+    margin: 0 auto;
+
+        .hero-content{
+
+            h1{
+                font-size: 55px;
+                line-height: 1.5;
+            }
+
+            .hero-desc{
+                line-height: 1.9;
+                max-width: 90%;
+            }
+
+            .ratings{
+
+                span > img{
+                    height: 1.5rem;
+                    padding-left: 0.8rem;
+                }
+            }
+        }
 
 
-       .content-img{
+        .content-img{
             width: auto;
         }
+        }
+
+        nav{
+
+            ul{
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 40%;
+
+                    li{
+                        font-size: 14px;
+                        
+                            a{
+                                color: #706c6c;
+                            }
+                    }
+            }
     }
 
-    nav{
+    section{
 
-        ul{
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        h2{
+            text-align: center;
+        }
+
+        .social-proof{
+            flex-wrap: nowrap;
+
+            img{
+            width: 25%;
+        }
         }
     }
 }

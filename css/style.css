@@ -17,6 +17,10 @@
   border-radius: 7px;
 }
 
+.cta-btn:hover {
+  background-color: #016101;
+}
+
 a {
   text-decoration: none;
 }
@@ -35,7 +39,7 @@ header nav {
   align-items: center;
   justify-content: center;
   justify-content: space-between;
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 main .hero-content {
