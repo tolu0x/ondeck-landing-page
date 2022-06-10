@@ -5,6 +5,22 @@
   box-sizing: border-box;
 }
 
+.cta-btn {
+  margin: 15px 0;
+  padding: 15px 40px;
+  border: none;
+  outline: none;
+  background-color: #0d490d;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 7px;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   margin-left: 1.4rem;
@@ -36,17 +52,6 @@ main .hero-content p {
   color: #706c6c;
   font-size: 1.1rem;
   line-height: 1.7;
-}
-main .hero-content .cta-btn {
-  margin: 15px 0;
-  padding: 15px 40px;
-  border: none;
-  outline: none;
-  background-color: #0d490d;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 7px;
 }
 main .hero-content .review-brands img {
   height: 1rem;

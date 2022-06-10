@@ -1,0 +1,19 @@
+@media screen and (min-width: 900px) {
+  .hamburger {
+    display: none;
+  }
+
+  main {
+    display: flex;
+  }
+  main .content-img {
+    width: auto;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}/*# sourceMappingURL=desktop.css.map */
