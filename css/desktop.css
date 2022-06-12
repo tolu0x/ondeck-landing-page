@@ -8,6 +8,14 @@
     display: none;
   }
 
+  .login {
+    display: block;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
   header {
     max-width: 106.5rem;
   }
@@ -18,6 +26,28 @@
   header nav .login button {
     margin: 0;
     padding: 15px 25px;
+  }
+  header nav .nav-links {
+    position: relative;
+  }
+  header nav .nav-links .ext-menu {
+    position: absolute;
+    top: 100%;
+    left: -10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 370px;
+    border-radius: 13px;
+    padding: 0.7rem;
+  }
+  header nav .nav-links .ext-menu .ext-menu-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 0.7rem;
   }
 
   main {
