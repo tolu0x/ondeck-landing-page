@@ -37,8 +37,19 @@ header{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                align-items: flex-end;
+                align-items: center;
                 background: none;
+                transform: translateY(0);
+
+                
+
+                & > li{
+                    padding-top: 0;
+
+                    a{
+                        color: black;
+                    }
+                }
 
                 .ext-menu{
                     position: absolute;
