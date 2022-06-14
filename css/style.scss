@@ -15,13 +15,13 @@
     border-radius: 30px;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.cta-btn{
+.cta-btn {
     margin: 15px 0;
     padding: 15px 40px;
     border: none;
@@ -33,86 +33,140 @@
     border-radius: 7px;
 }
 
-.cta-btn:hover{
+.cta-btn:hover {
     background-color: #016101;
 }
 
-.login, .nav-links{
+.login {
     display: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
+
     margin: {
         left: 1.4rem;
         right: 1.4rem;
     }
+
     background-color: #f3ebe3;
 }
 
-header{
-    nav{
+
+
+header {
+    nav {
         @include flex-box(row);
         justify-content: space-between;
         padding-top: 2rem;
+
+
+        .nav-links {
+            position: fixed;
+            transform: translateY(-100%);
+            transition: transform 0.9s;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgb(139, 104, 13);
+            color: #000;
+            z-index: 99;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-direction: column;
+
+            &.show-menu {
+                transform: translateY(0);
+            }
+
+            & li {
+                list-style: none;
+                padding-top: 7rem;
+
+                a {
+                    color: #fff;
+                }
+            }
+        }
+
+        .hamburger {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            z-index: 100;
+            cursor: pointer;
+        }
+
+        .ext-menu {
+            display: none;
+        }
+
+        .close {
+            display: none;
+        }
     }
+
+
 }
 
-main{
+main {
 
-    .hero-content{
+    .hero-content {
         margin-top: 5rem;
 
-        h1{
+        h1 {
             font-size: 40px;
             font-weight: bolder;
         }
 
-        p{
+        p {
             padding-top: 1rem;
-            font-size: 16px ;
+            font-size: 16px;
             font-weight: 300;
             color: #706c6c;
             font-size: 1.1rem;
             line-height: 1.7;
         }
 
-        .review-brands img{
+        .review-brands img {
             height: 1rem;
             padding-left: 0.5rem;
         }
     }
 
-    .hero-img{
+    .hero-img {
         display: none;
     }
 
-    .text-highlight{
+    .text-highlight {
         color: #e9ae17;
     }
 }
 
-section{
+section {
     padding-top: 3rem;
 
-    h2{
+    h2 {
         padding: 0 12px;
         font-size: 14px;
         color: #706c6c;
     }
 
-    .social-proof{
+    .social-proof {
         @include flex-box(row);
         flex-wrap: wrap;
         gap: 0.5rem;
         padding-top: 20px;
         padding-bottom: 40px;
 
-        img{
+        img {
             width: 30%;
             margin: 10px;
         }

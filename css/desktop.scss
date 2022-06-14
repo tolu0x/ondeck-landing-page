@@ -16,10 +16,6 @@ body{
 }
 
 
-.nav-links{
-    display: flex;
-}
-
 
 header{
     max-width: 106.5rem;
@@ -38,6 +34,11 @@ header{
 
             .nav-links{
                 position: relative;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-end;
+                background: none;
 
                 .ext-menu{
                     position: absolute;

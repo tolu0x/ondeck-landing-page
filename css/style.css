@@ -21,7 +21,7 @@
   background-color: #016101;
 }
 
-.login, .nav-links {
+.login {
   display: none;
 }
 
@@ -44,6 +44,46 @@ header nav {
   justify-content: center;
   justify-content: space-between;
   padding-top: 2rem;
+}
+header nav .nav-links {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.9s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(139, 104, 13);
+  color: #000;
+  z-index: 99;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+header nav .nav-links.show-menu {
+  transform: translateY(0);
+}
+header nav .nav-links li {
+  list-style: none;
+  padding-top: 7rem;
+}
+header nav .nav-links li a {
+  color: #fff;
+}
+header nav .hamburger {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 100;
+  cursor: pointer;
+}
+header nav .ext-menu {
+  display: none;
+}
+header nav .close {
+  display: none;
 }
 
 main .hero-content {
