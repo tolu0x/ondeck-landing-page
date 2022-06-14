@@ -65,6 +65,9 @@ main .hero-content .review-brands img {
   height: 1rem;
   padding-left: 0.5rem;
 }
+main .hero-img {
+  display: none;
+}
 main .text-highlight {
   color: #e9ae17;
 }
